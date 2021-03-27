@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { LoadPhotosComponent } from './components/load-photos/load-photos.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotosComponent,
-    LoadPhotosComponent
+    LoadPhotosComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
