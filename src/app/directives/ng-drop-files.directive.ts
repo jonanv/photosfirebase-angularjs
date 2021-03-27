@@ -6,7 +6,7 @@ import { FileItem } from '../models/file-item';
 })
 export class NgDropFilesDirective {
 
-  @Input() public files: FileItem[] = [];
+  @Input() private files: FileItem[] = [];
   @Output() private mouseOver: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }

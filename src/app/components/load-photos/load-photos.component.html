@@ -5,7 +5,8 @@
     <div class="well drop-zone"
       appNgDropFiles
       [ngClass]="{'file-over': isOnAnElement}"
-      (mouseOver)=processMouseOver($event)>
+      (mouseOver)=processMouseOver($event)
+      [files]="files">
       <h4>Deje caer aquí los archivos</h4>
       <img src="assets/img/drop-images.png" alt="">
     </div>
@@ -19,7 +20,10 @@
       [disabled]="files.length === 0">
       Cargar a Firebase
     </button>
-    <button class="btn btn-danger">Limpiar</button>
+    <button class="btn btn-danger"
+      (click)="clearFiles()">
+      Limpiar
+    </button>
 
     <table class="table">
       <thead class="table-dark">
@@ -30,14 +34,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>ASD</td>
-          <td>12 MB</td>
+        <tr *ngFor="let file of files">
+          <td>{{ file.fileName }}</td>
+          <td>{{ file.file.size / 1024 / 1024 | number:'.2-2' }} MB</td>
           <td>
             <div class="progress">
               <div class="progress-bar"
                 role="progressbar"
-                style="width: 25%"
+                [ngStyle]="{'width': file.progress + '%'}"
                 aria-valuenow="25"
                 aria-valuemin="0"
                 aria-valuemax="100">

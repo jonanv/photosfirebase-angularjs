@@ -26,6 +26,10 @@ export class LoadPhotosComponent implements OnInit {
     this.loadImagesService.loadImagesFirebase(this.files);
   }
 
+  public clearFiles(): void {
+    this.files = [];
+  }
+
   public processMouseOver(mouseOver: boolean) {
     this.isOnAnElement = mouseOver;
   }
