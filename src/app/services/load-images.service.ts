@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase';
 import { FileItem } from '../models/file-item';
+import { Item } from '../interfaces/item.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class LoadImagesService {
     private angularFirestore: AngularFirestore
   ) { }
 
-  private saveImage(img: { name: string, url: string }): void {
+  private saveImage(img: Item): void {
     this.angularFirestore.collection(`${ this.FOLDER_IMGS }`)
       .add( img );
   }

@@ -81,15 +81,14 @@ or
 ng g d directives/ngDropFiles --skip-tests
 ```
 
-<!-- 
 # Create interface (add at file name '.interface.ts')
 ```javascript
-ng generate interface interfaces/creditCard --skip-tests
+ng generate interface interfaces/item
 ```
 or
 ```javascript
-ng g i interfaces/creditCard --skip-tests
-``` -->
+ng g i interfaces/item
+```
 
 # Server local
 install global ```sudo npm i -g http-server```

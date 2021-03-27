@@ -3,11 +3,8 @@ import { Component, OnInit } from '@angular/core';
 // Imports
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { Item } from 'src/app/interfaces/item.interface';
 
-export interface Item {
-  name: string,
-  url: string
-}
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.component.html',
