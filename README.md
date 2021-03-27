@@ -63,16 +63,16 @@ or
 ng g c components/photos --skip-tests -is
 ```
 
-<!-- 
 # Create service without file .spec (--skip-tests)
 ```javascript
-ng generate service services/creditCard --skip-tests
+ng generate service services/loadImages --skip-tests
 ```
 or
 ```javascript
-ng g s services/creditCard --skip-tests
+ng g s services/loadImages --skip-tests
 ```
 
+<!-- 
 # Create interface (add at file name '.interface.ts')
 ```javascript
 ng generate interface interfaces/creditCard --skip-tests
