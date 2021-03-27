@@ -8,12 +8,12 @@
 [![License][license-badge]][license-url]
 
 # Site
-<!-- ![picksfirebase angularjs](https://i.imgur.com/BtJ5256.png)
-![picksfirebase angularjs 1](https://i.imgur.com/CjYDVm1.png)
-![picksfirebase angularjs 2](https://i.imgur.com/P6Tg7n2.png) -->
+<!-- ![photosfirebase angularjs](https://i.imgur.com/BtJ5256.png)
+![photosfirebase angularjs 1](https://i.imgur.com/CjYDVm1.png)
+![photosfirebase angularjs 2](https://i.imgur.com/P6Tg7n2.png) -->
 
 # Install dependences
-in ```picksfirebase-angularjs/```
+in ```photosfirebase-angularjs/```
 
 ```bash
 npm install
@@ -54,16 +54,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ***
-<!-- 
-# Create component without .spec (--skip-tests)
+# Create component without .spec and .css (--skip-tests -is)
 ```javascript
-ng generate component components/creditCardForm --skip-tests
+ng generate component components/photos --skip-tests -is
 ```
 or
 ```javascript
-ng g c components/creditCardForm --skip-tests
+ng g c components/photos --skip-tests -is
 ```
 
+<!-- 
 # Create service without file .spec (--skip-tests)
 ```javascript
 ng generate service services/creditCard --skip-tests
@@ -85,7 +85,7 @@ ng g i interfaces/creditCard --skip-tests
 # Server local
 install global ```sudo npm i -g http-server```
 
-deploy in ```/picksfirebase-angularjs/dist/picksfirebase-angularjs/```
+deploy in ```/photosfirebase-angularjs/dist/photosfirebase-angularjs/```
 
 ```javascript
 http-server
