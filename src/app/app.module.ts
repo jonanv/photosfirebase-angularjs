@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { LoadPhotosComponent } from './components/load-photos/load-photos.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotosComponent,
     LoadPhotosComponent,
-    NavbarComponent
+    NavbarComponent,
+    NgDropFilesDirective
   ],
   imports: [
     BrowserModule,

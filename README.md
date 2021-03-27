@@ -72,6 +72,15 @@ or
 ng g s services/loadImages --skip-tests
 ```
 
+# Create directive without file .spec (--skip-tests)
+```javascript
+ng generate directive directives/ngDropFiles --skip-tests
+```
+or
+```javascript
+ng g d directives/ngDropFiles --skip-tests
+```
+
 <!-- 
 # Create interface (add at file name '.interface.ts')
 ```javascript
