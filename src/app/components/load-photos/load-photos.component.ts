@@ -13,6 +13,7 @@ import { LoadImagesService } from '../../services/load-images.service';
 export class LoadPhotosComponent implements OnInit {
 
   public files: FileItem[] = [];
+  public isOnAnElement: boolean = false;
 
   constructor(
     private loadImagesService: LoadImagesService
@@ -23,5 +24,9 @@ export class LoadPhotosComponent implements OnInit {
 
   public loadImages(): void {
     this.loadImagesService.loadImagesFirebase(this.files);
+  }
+
+  public processMouseOver(mouseOver: boolean) {
+    this.isOnAnElement = mouseOver;
   }
 }
