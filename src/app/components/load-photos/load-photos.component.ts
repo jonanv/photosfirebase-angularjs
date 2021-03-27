@@ -33,4 +33,8 @@ export class LoadPhotosComponent implements OnInit {
   public processMouseOver(mouseOver: boolean) {
     this.isOnAnElement = mouseOver;
   }
+
+  public removeImage(index: number): void {
+    this.files.splice(index, 1);
+  }
 }

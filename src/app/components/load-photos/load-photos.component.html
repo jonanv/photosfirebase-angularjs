@@ -31,10 +31,11 @@
           <th>Nombre archivo</th>
           <th>Tamaño</th>
           <th>Progreso</th>
+          <th>Eliminar</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let file of files">
+        <tr *ngFor="let file of files, let i = index">
           <td [ngClass]="{'text-green': file.progress >= 100}">{{ file.fileName }}</td>
           <td>{{ file.file.size / 1024 / 1024 | number:'.2-2' }} MB</td>
           <td>
@@ -47,6 +48,11 @@
                 aria-valuemax="100">
               </div>
             </div>
+          </td>
+          <td>
+            <a class="link" (click)="removeImage(i)">
+              <i class="fas fa-trash-alt text-danger"></i>
+            </a>
           </td>
         </tr>
       </tbody>
